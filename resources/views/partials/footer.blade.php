@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-6">
                     <div class="top-footer d-flex flex-nowrap">
-                        {{-- @foreach ($footer_lists as $list)
+                        @foreach ($footer_lists as $list)
                             <ul class="list-unstyled">
                                 <h5> {{ $list['list_title'] }}</h5>
                                 @foreach ($list['list_links'] as $link)
@@ -15,7 +15,7 @@
                                     </li>
                                 @endforeach
                             </ul>
-                        @endforeach --}}
+                        @endforeach
                     </div>
                 </div>
                 <div class="col-6">
@@ -42,11 +42,11 @@
                     <div class="d-flex justify-content-end align-items-center p-5">
                         <span style="color: #0C7CEC">FOLLOW US</span>
                         <ul class="list-unstyled d-flex">
-                            {{--  @foreach ($socials as $social)
+                            @foreach ($socials as $social)
                                 <li>
                                     <img src="{{ Vite::asset($social['socialLogo']) }}" alt="{{ $social['url'] }}">
                                 </li>
-                            @endforeach --}}
+                            @endforeach
 
                         </ul>
                     </div>

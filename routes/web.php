@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $socials = config('social');
+    $footer_lists = config('footer');
+    return view('home', compact( 'socials', 'footer_lists'));
 })->name('home');
