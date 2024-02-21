@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-12 justify-content-center d-flex">
+            <div class="col-12 justify-content-center d-flex position-relative">
                 <div class="card mb-3" style="max-width: 90%;">
                     <div class="row g-0">
                         <div class="col-md-4">
@@ -25,6 +25,13 @@
                             </div>
                         </div>
                     </div>
+                    <form class="position-absolute bottom-0 end-0 m-2"
+                        action="{{ route('comics.destroy', ['comic' => $comic['id']]) }}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+
 
 
                 </div>
