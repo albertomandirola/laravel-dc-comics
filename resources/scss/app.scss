@@ -1,0 +1,88 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/bootstrap';
+
+header {
+    height: 75px;
+
+    img {
+        width: 50px;
+    }
+
+    li {
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+    }
+
+
+}
+
+footer {
+    overflow-y: hidden;
+
+    .footer-bg {
+        background-image: url(/resources/img/footer-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h5 {
+        color: white;
+    }
+
+    ul {
+        padding: 0px 20px;
+        margin: 0px 15px;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            font-weight: lighter;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .img-container {
+
+        img {
+            top: -20%;
+
+        }
+    }
+
+    .bottom-footer {
+
+        position: absolute;
+        background-color: rgb(19, 23, 23);
+        width: 100%;
+
+        li {
+            padding-left: 10px;
+        }
+
+        .my-btn {
+            border: #0C7CEC 2px solid;
+            padding: 10px;
+            text-transform: uppercase;
+            color: white;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 14px;
+                font-weight: lighter;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+}
