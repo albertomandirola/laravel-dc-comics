@@ -60,7 +60,7 @@
                 </div>
                 <div class="col">
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" name='artist' placeholder="Leave a comment here" id="floatingTextarea2"
+                        <textarea class="form-control" name='artists' placeholder="Leave a comment here" id="floatingTextarea2"
                             style="height: 100px" required></textarea>
                         <label for="floatingTextarea2">artist</label>
                     </div>
