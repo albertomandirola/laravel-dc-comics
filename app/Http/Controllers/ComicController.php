@@ -29,7 +29,9 @@ class ComicController extends Controller
      */
     public function create()
     {
-        //
+        $socials = config('social');
+        $footer_lists = config('footer');
+        return view('comics.create' , compact('socials', 'footer_lists'));
     }
 
     /**
