@@ -15,7 +15,11 @@ class ComicController extends Controller
      */
     public function index()
     {
-        //
+        $comics = Comic::all();
+        $socials = config('social');
+        $footer_lists = config('footer');
+        return view('comics.index' , compact('comics','socials', 'footer_lists'));
+
     }
 
     /**
@@ -47,7 +51,10 @@ class ComicController extends Controller
      */
     public function show($id)
     {
-        //
+        $comic = Comic::find($id);
+        $socials = config('social');
+        $footer_lists = config('footer');
+        return view('comics.show' , compact('comic','socials', 'footer_lists'));
     }
 
     /**

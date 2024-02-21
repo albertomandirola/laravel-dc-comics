@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ComicController as ComicController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,3 +19,5 @@ Route::get('/', function () {
     $footer_lists = config('footer');
     return view('home', compact( 'socials', 'footer_lists'));
 })->name('home');
+
+Route::resource('comics', ComicController::class);

@@ -14,7 +14,7 @@
                         </li>
 
                         <li>
-                            <a href="">COMICS</a>
+                            <a href="{{ Route('comics.index') }}">COMICS</a>
                         </li>
 
                         <li>
