@@ -25,12 +25,17 @@
                             </div>
                         </div>
                     </div>
-                    <form class="position-absolute bottom-0 end-0 m-2"
-                        action="{{ route('comics.destroy', ['comic' => $comic['id']]) }}" method="POST">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-danger">Delete</button>
-                    </form>
+                    <div class="button-container position-absolute bottom-0 end-0 d-flex">
+                        <a class="btn btn-warning  m-2" href="{{ route('comics.edit', ['comic' => $comic['id']]) }}">Edit
+                            comic</a>
+                        <form class=" m-2" action="{{ route('comics.destroy', ['comic' => $comic['id']]) }}"
+                            method="POST" onsubmit="return confirm('sei sicuro di voler eliminare il fumetto?')">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </div>
+
 
 
 

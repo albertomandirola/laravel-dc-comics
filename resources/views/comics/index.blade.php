@@ -17,7 +17,8 @@
                             alt="{{ $comic->title }}">
                         <div class="card-body">
                             <h5 class="card-title">{{ $comic->title }}</h5>
-                            <a href="{{ route('comics.show', $comic->id) }}" class=" btn btn-sm btn-primary">details</a>
+                            <a href="{{ route('comics.show', ['comic' => $comic['id']]) }}"
+                                class=" btn btn-sm btn-primary">details</a>
                         </div>
                     </div>
                 </div>
